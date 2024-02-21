@@ -35,7 +35,7 @@ def add_date_to_path(source_path: Path) -> Path:
     Returns:
         Path: The updated path with the current date added.
     """
-    path_dated = source_path.parent / f"{datetime.now().strftime('%Y-%m-%d')}_{source_path.name}"
+    path_dated = source_path.parent / f"{datetime.now().strftime("%Y-%m-%d")}_{source_path.name}"
     path_dated.mkdir(parents=True, exist_ok=True)
     return path_dated
 
